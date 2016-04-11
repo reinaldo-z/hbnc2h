@@ -18,10 +18,10 @@ xangst
   Section: Pseudo-potential files
 ######################################################
 
-!!! /home/reinaldo/tiniba/pseudopotentials/hgh/1h
-!!! /home/reinaldo/tiniba/pseudopotentials/hgh/5b
-!!! /home/reinaldo/tiniba/pseudopotentials/hgh/7n
-!!! /home/reinaldo/tiniba/pseudopotentials/hgh/6c
+/home/reinaldo/tiniba/pseudopotentials/hgh/1h.1.hgh
+/home/reinaldo/tiniba/pseudopotentials/hgh/5b.3.hgh
+/home/reinaldo/tiniba/pseudopotentials/hgh/7n.5.hgh
+/home/reinaldo/tiniba/pseudopotentials/hgh/6c.4.hgh
 
 ######################################################
   Section: Common Variables
