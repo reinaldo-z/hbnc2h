@@ -1,0 +1,8 @@
+The atomic positions are given in Å (this is necessary for Molekel), celldm  are in AU (Bohrs), which is Q. Espresso convention,  therefore the hexagonal unit cell is celldm(1) * 0.5291772m the same as celdm(2). The slab thickness is  celldm(3)*celld(1).
+ 
+I used simple excel and used initial coordinates (atoms 1-6) , then translated to have if 4 times, see attachment.
+ 
+Let me know if this explains your questions, otherwise we can talk by skype
+ 
+ 
+Cheers, Anatoli
