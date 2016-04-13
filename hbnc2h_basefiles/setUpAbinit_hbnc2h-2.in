@@ -20,8 +20,8 @@ xangst
 
 /home/reinaldo/tiniba/pseudopotentials/hgh/1h.1.hgh
 /home/reinaldo/tiniba/pseudopotentials/hgh/5b.3.hgh
-# /home/reinaldo/tiniba/pseudopotentials/hgh/7n.5.hgh
-# /home/reinaldo/tiniba/pseudopotentials/hgh/6c.4.hgh
+/home/reinaldo/tiniba/pseudopotentials/hgh/7n.5.hgh
+/home/reinaldo/tiniba/pseudopotentials/hgh/6c.4.hgh
 
 ######################################################
   Section: Common Variables
@@ -33,32 +33,26 @@ prtvol      10
 ### Definition of the unit cell
 chksymbreak 0
 chkprim     1 
-
 # a0=5.43 a0b = 10.26121212 Bohr
-
 acell  2.460673980 2.460673980 7 angstrom   
 
 rprim  0.86602540378  0.5  0.0
       -0.86602540378  0.5  0.0
        0.0            0.0  1.0
 
-
 ### Definition of the atom types
-# ntypat      4
-ntypat      2
-# znucl       1 5 7 6
-znucl       1 5
+ntypat      4
+znucl       1  5  7  6
 
 ### Definition of the atoms
-# natom     6
-natom     2
-# typat     1 2 3 4 4 1
-typat     1 2 
+natom     6
+typat 1 2 3 4 4 1
 
-### spin-orbit
+## spin-orbit
 ### For KSS comment spin-related variables ###
 so_psp         1 1
 nspinor        1 1
+##
 
 nsppol         1
  
@@ -82,7 +76,7 @@ toldfe1        1.0d-12
 nshiftk1       1
 shiftk1        0. 0. 0.5
 ## change for convergence
-ngkpt1         8 8 2
+ngkpt1        8 8 2
 
 ###################################################
   Section: Optic variables
