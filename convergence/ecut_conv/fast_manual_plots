@@ -1,0 +1,41 @@
+        CHI LINEAR RESPONSE
+p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_15-spin_scissor_0_Nc_22" u 1:7 w l 
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_18-spin_scissor_0_Nc_22" u 1:7 w l 
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_20-spin_scissor_0_Nc_22" u 1:7 w l 
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_22-spin_scissor_0_Nc_22" u 1:7 w l 
+-15 +-18 ok>20 22
+
+
+        ETA CURRENT INJECTION TENSOR
+p   "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_15-spin_scissor_0_Nc_22" u 1:3 w l 
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_18-spin_scissor_0_Nc_22" u 1:3 w l 
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_20-spin_scissor_0_Nc_22" u 1:3 w l 
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_22-spin_scissor_0_Nc_22" u 1:3 w l 
+-15 +-18 ok>20 22
+
+
+        DSP ALONG DIRECTION a
+dsp-res/dsp.kk_x_452_15-scissor_0_Nc_22"
+dsp-res/dsp.kk_x_452_18-scissor_0_Nc_22"
+dsp-res/dsp.kk_x_452_20-scissor_0_Nc_22"
+dsp-res/dsp.kk_x_452_22-scissor_0_Nc_22"
+p   "dsp-res/dsp.kk_x_452_25-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_x_452_28-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_x_452_30-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+ok>28
+dsp-res/dsp.kk_y_452_15-scissor_0_Nc_22
+dsp-res/dsp.kk_y_452_18-scissor_0_Nc_22
+dsp-res/dsp.kk_y_452_20-scissor_0_Nc_22
+dsp-res/dsp.kk_y_452_22-scissor_0_Nc_22
+p   "dsp-res/dsp.kk_y_452_25-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_y_452_28-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_y_452_30-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+ok>28
+dsp-res/dsp.kk_z_452_15-scissor_0_Nc_22
+dsp-res/dsp.kk_z_452_18-scissor_0_Nc_22
+dsp-res/dsp.kk_z_452_20-scissor_0_Nc_22
+dsp-res/dsp.kk_z_452_22-scissor_0_Nc_22
+p    "dsp-res/dsp.kk_z_452_25-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep  "dsp-res/dsp.kk_z_452_28-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep  "dsp-res/dsp.kk_z_452_30-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+ok>28
