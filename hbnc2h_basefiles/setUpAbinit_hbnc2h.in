@@ -60,7 +60,7 @@ nsppol         1
  
 ### Definition of the planewave basis set
 
-ecut          28
+ecut          40
 
 ### Definition of the SCF procedure
 
