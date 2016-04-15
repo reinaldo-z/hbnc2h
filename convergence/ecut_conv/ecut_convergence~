@@ -1,0 +1,5 @@
+    Convergence for ecut reached at 40Ha
+
+    For the chi (linear) and eta (current injection) the convergence was reached at 18Ha but for the
+    DSP I have convergence only at 40Ha. The future calculations will be made using 40 Ha as teh ecut
+    energy.
