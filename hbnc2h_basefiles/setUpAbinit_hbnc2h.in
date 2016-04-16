@@ -90,7 +90,7 @@ getden1             1
 iscf1              -2
 kptnrm1             1.0 
 kptopt1             0
-nband               32
+nband               36
 prtwf1              1
 tolwfr              1.0d-12
 
@@ -99,7 +99,7 @@ tolwfr              1.0d-12
 ###             part of the pseudopotential to the 
 ###             velocity matrix elements
 ### For KSS set nbandkss2 with the same numerical values as nband
-nbandkss2          32
+nbandkss2          36
 ### For KSS the following variables are a must
 getden2             1
 iscf2              -2
