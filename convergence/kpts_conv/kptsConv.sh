@@ -27,5 +27,5 @@ for i in ${kpts[@]}; do
     run_tiniba.sh -r run -k "$i" -N 0 -x 2 -C 6 -P 1382 -w -e -p -s
     run_tiniba.sh -r erase
     END=$(date)
-    ssh cassandra "echo -e 'Calculations completed for $i kpts\nStarted at $START \nFinished at $END \n\nArray of ktps: \n${kpts[@]} ' | mail -s '$i kpts' reychino@gmail.com"
+    ssh cassandra "echo -e 'Calculations completed for $i kpts\nStarted at  $START \nFinished at $END \n\nArray of ktps: \n${kpts[@]} ' | mail -s '$i kpts' reychino@gmail.com"
 done
