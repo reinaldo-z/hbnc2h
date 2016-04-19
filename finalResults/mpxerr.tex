@@ -1,0 +1,62 @@
+\documentclass{article}
+\begin{document}
+
+\gdef\mpxshipout{\shipout\hbox\bgroup
+  \setbox0=\hbox\bgroup}
+\gdef\stopmpxshipout{\egroup  \dimen0=\ht0 \advance\dimen0\dp0
+  \dimen1=\ht0 \dimen2=\dp0
+  \setbox0=\hbox\bgroup
+    \box0
+    \ifnum\dimen0>0 \vrule width1sp height\dimen1 depth\dimen2 
+    \else \vrule width1sp height1sp depth0sp\relax
+    \fi\egroup
+  \ht0=0pt \dp0=0pt \box0 \egroup}
+\mpxshipout% line 125 ./chi-hbnc2h_im.mp
+0%
+\stopmpxshipout
+\mpxshipout% line 128 ./chi-hbnc2h_im.mp
+0.5%
+\stopmpxshipout
+\mpxshipout% line 131 ./chi-hbnc2h_im.mp
+1%
+\stopmpxshipout
+\mpxshipout% line 134 ./chi-hbnc2h_im.mp
+1.5%
+\stopmpxshipout
+\mpxshipout% line 137 ./chi-hbnc2h_im.mp
+2%
+\stopmpxshipout
+\mpxshipout% line 140 ./chi-hbnc2h_im.mp
+2.5%
+\stopmpxshipout
+\mpxshipout% line 143 ./chi-hbnc2h_im.mp
+3%
+\stopmpxshipout
+\mpxshipout% line 147 ./chi-hbnc2h_im.mp
+0%
+\stopmpxshipout
+\mpxshipout% line 151 ./chi-hbnc2h_im.mp
+5%
+\stopmpxshipout
+\mpxshipout% line 155 ./chi-hbnc2h_im.mp
+10%
+\stopmpxshipout
+\mpxshipout% line 159 ./chi-hbnc2h_im.mp
+15%
+\stopmpxshipout
+\mpxshipout% line 163 ./chi-hbnc2h_im.mp
+20%
+\stopmpxshipout
+\mpxshipout% line 174 ./chi-hbnc2h_im.mp
+{\Large Im$[\chi^{aa}](\omega)}$%
+\stopmpxshipout
+\mpxshipout% line 176 ./chi-hbnc2h_im.mp
+{\Large Photon Energy (eV)}%
+\stopmpxshipout
+\mpxshipout% line 178 ./chi-hbnc2h_im.mp
+Layers%
+\stopmpxshipout
+% line 1398 ./chi-hbnc2h_im.mp
+ \end{document}
+
+\end{document}
