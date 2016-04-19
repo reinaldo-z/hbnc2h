@@ -172,7 +172,7 @@ rep "dsp-res/dsp.kk_z_3202_40-scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) w l
   p "dsp-res/dsp.kk_z_5002_40-scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) w l
 rep "dsp-res/dsp.kk_z_6052_40-scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) w l
 rep "dsp-res/dsp.kk_z_7202_40-scissor_0_Nc_18" u 1:(2*$4/($2+$3+1.e-10)) w l
-Convergence for 5202 kpts
+Convergence for 5002 kpts
 
 
 

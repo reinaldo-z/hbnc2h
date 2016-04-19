@@ -1,0 +1,25 @@
+Mon Apr 18 20:29:46 CDT 2016
+
+Hi.
+
+I'm writing to send you the  results for the hbnc2h structure. I made the final graphs just few minutes ago.
+
+All the results are totally converged with the following parameters:
+    vacuum = 11.216459551 angstroms (equivalent to have a z lenght of 14Angs less the height of the structure)
+    total number of bands = 36 (18 conduction bands  and 18 valence bands with spin)
+    ecut = 40Ha
+    kpts = 5002
+
+The responses are the following 
+    real and imaginary linear response (chi-hbnc2h_re.pdf and chi-hbnc2h_im.pdf),   
+    degree of spin polarization (dsp-hbnc2h.pdf), 
+    optical current injection (eta-hbnc2h.pdf)
+
+Is important to mention that this structure is not good to reach a large DSP. The best case is along the z direction and is less than 2%. For the  optical current injection we have that the z component is equal to zero.
+
+If you have any sugestion for changes just let me know.
+
+Thanks.
+
+################################################################################
+
