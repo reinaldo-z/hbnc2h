@@ -23,3 +23,8 @@ Thanks.
 
 ################################################################################
 
+Thank you, Reinaldo, again for your calculations. Good news that the deadline has been extended by one month, I got the e-mail today. Related to this, even though I am relieved,  I plan to stick to reasonable short paper for CIMTEC: searching the literature I believe that the heterosystems with H, that we are discussing, were not considered, although they are very interesting. Therefore, we can do more calculations later and write a large paper.
+ 
+Now I have a question. Looking at your linear response, you see that xx and yy  components of chi are different. To me they should be the same, since the system has hexagonal symmetry (is this correct?).  I am attaching as an example the calculation of the linear response for graphane that has been carried out in CIO six years ago, with the xx and yy components, which are practically identical.
+ 
+I’d suggest to check whether everything is OK, you can repeat the same calculations for simple system, e.g., BN monolayer, I put coordinates of BN monolayer, graphene monolayer and the system that you calculated in one *.xyz file.
