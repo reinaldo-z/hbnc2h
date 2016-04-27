@@ -1,0 +1,28 @@
+abinit_check.sh 2
+
+    =============================
+making symmetries
+    =============================
+    info from /hbnc2h-10z.out
+    =============================
+ space group P1 (# 1); Bravais aP (primitive triclinic)
+nsym=1 in 0 lines
+nsym=1 which imply identinty as the only symmetry
+output in symmetries/sym.d
+    =============================
+ SLAB IS NOT CENTROSYMMETRIC
+    =============================
+a0=10.26121212 Bohrs a1=acell 4.65 a2=bohrs: 4.65 a3= 10
+primitive vectors
+0.86602540378 0.5 0.0
+-0.86602540378 0.5 0.0
+0.0 0.0 1.0
+a1=acell 4.65 a2=bohrs: 4.65 a3= 10
+    =============================
+ number of plane waves = 106
+    =============================
+================================================================================
+P This job should need less than                       6.070 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+_ WF disk file :      2.072 Mbytes ; DEN or POT disk file :      0.020 Mbytes.
+================================================================================
