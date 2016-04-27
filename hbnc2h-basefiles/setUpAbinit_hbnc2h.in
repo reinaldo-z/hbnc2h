@@ -33,32 +33,35 @@ prtvol      10
 ### Definition of the unit cell
 chksymbreak 0
 chkprim     1 
+
 # a0=5.43 a0b = 10.26121212 Bohr
-acell  2.460673980 2.460673980 7 angstrom   
+
+### acell bohrs:
+acell  4.65  4.65 30
 
 rprim  0.86602540378  0.5  0.0
       -0.86602540378  0.5  0.0
        0.0            0.0  1.0
 
+
 ### Definition of the atom types
 ntypat      4
-znucl       1  5  7  6
+znucl       1    5    7    6
 
 ### Definition of the atoms
 natom     6
-typat 1 2 3 4 4 1
+typat     1 2 3 4 4 1
 
-## spin-orbit
+### spin-orbit
 ### For KSS comment spin-related variables ###
-so_psp         1 1
-nspinor        1 1
-##
+so_psp         2 2 2 2
+nspinor        2 2 2 2
 
 nsppol         1
  
 ### Definition of the planewave basis set
 
-ecut          5
+ecut          40
 
 ### Definition of the SCF procedure
 
@@ -76,7 +79,7 @@ toldfe1        1.0d-12
 nshiftk1       1
 shiftk1        0. 0. 0.5
 ## change for convergence
-ngkpt1        8 8 2
+ngkpt1         8 8 2
 
 ###################################################
   Section: Optic variables
@@ -88,7 +91,7 @@ getden1             1
 iscf1              -2
 kptnrm1             1.0 
 kptopt1             0
-nband               40
+nband               36
 prtwf1              1
 tolwfr              1.0d-12
 
@@ -97,7 +100,7 @@ tolwfr              1.0d-12
 ###             part of the pseudopotential to the 
 ###             velocity matrix elements
 ### For KSS set nbandkss2 with the same numerical values as nband
-nbandkss2          40
+nbandkss2          36
 ### For KSS the following variables are a must
 getden2             1
 iscf2              -2
