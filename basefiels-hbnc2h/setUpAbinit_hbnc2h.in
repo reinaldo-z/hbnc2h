@@ -12,7 +12,7 @@
   Section: Coordinate System: xcart->Catresian xred->Reduced xang->Angstroms
 ######################################################
 
-xangst
+xcart
 
 ######################################################
   Section: Pseudo-potential files
@@ -61,7 +61,7 @@ nsppol         1
  
 ### Definition of the planewave basis set
 
-ecut          40
+ecut          5
 
 ### Definition of the SCF procedure
 
