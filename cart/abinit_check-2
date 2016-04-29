@@ -12,12 +12,12 @@ output in symmetries/sym.d
     =============================
  SLAB IS NOT CENTROSYMMETRIC
     =============================
-a0=10.26121212 Bohrs a1=acell 4.65 a2=bohrs: 4.65 a3= 10
+a0=10.26121212 Bohrs a1=4.65 a2=4.65 a3=10
 primitive vectors
 0.86602540378 0.5 0.0
 -0.86602540378 0.5 0.0
 0.0 0.0 1.0
-a1=acell 4.65 a2=bohrs: 4.65 a3= 10
+a1=4.65 a2=4.65 a3=10
     =============================
  number of plane waves = 106
     =============================
@@ -26,3 +26,5 @@ P This job should need less than                       6.070 Mbytes of memory.
   Rough estimation (10% accuracy) of disk space for files :
 _ WF disk file :      2.072 Mbytes ; DEN or POT disk file :      0.020 Mbytes.
 ================================================================================
+
+Popov pag 76
