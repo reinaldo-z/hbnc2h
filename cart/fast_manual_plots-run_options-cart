@@ -1,8 +1,13 @@
             VACUUM CONVERGENCE
 
-rklist.sh 31 31 2 abinit
-run_tiniba.sh -r run -k 452 -N 0 -x 2 -C 6 -P 22 -w -e -p -s
-run_tiniba.sh -r erase
-all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 1 -t "xx yy zz"
-all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 3 -t "xxy yxy zxy"
-all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 41 -t "xxy yxy zxy"
+abinit_check.sh 1; abinit_check.sh 2; echo 1 | rklist.sh 31 31 2 abinit; run_tiniba.sh
+
+run_tiniba.sh -r run -k 452 -N 0 -x 2 -C 6 -P  -w -e -p -s
+
+run_tiniba.sh -r erase; all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 1 -t "xx yy zz"; all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 3 -t "xxy yxy zxy"; all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 41 -t "xxy yxy zxy"
+
+
+p "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-10z" u 1:2 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-15z" u 1:2 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-20z" u 1:2 w l
+
