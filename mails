@@ -28,3 +28,25 @@ Thank you, Reinaldo, again for your calculations. Good news that the deadline ha
 Now I have a question. Looking at your linear response, you see that xx and yy  components of chi are different. To me they should be the same, since the system has hexagonal symmetry (is this correct?).  I am attaching as an example the calculation of the linear response for graphane that has been carried out in CIO six years ago, with the xx and yy components, which are practically identical.
  
 I’d suggest to check whether everything is OK, you can repeat the same calculations for simple system, e.g., BN monolayer, I put coordinates of BN monolayer, graphene monolayer and the system that you calculated in one *.xyz file.
+################################################################################
+
+Hi Anatoli. 
+
+First, thank you for the good news! 
+
+I was checking the info you provided me in the last mail and there is a mistake
+in my calculations. The mistake was because when I used the *.xyz file in
+Angstroms and we should use Cartesian coordinates. Sorry, that's my fault.
+
+In the other hand, the info you provided me about hexagonal structures is right;
+the xx and yy components should be the same for an hexagonal structure. I made a
+fast calculations of different systems using the hexagonal symmetry and obtained
+the result mentioned above.
+
+But also, when I introduce the coordinates and the corresponding vectors in
+Abinit for the hexagonal structure in which we are working, Abinit reports a
+primitive triclinic class 1 system. As you can see in the plot attached (NOT
+CONVERGED), the xx and yy components for the linear response are similar in
+shape but not equal. I think this is happening because of the position of the
+atoms: they are not perfectly aligned and so we have a primitive triclinic 1
+system.

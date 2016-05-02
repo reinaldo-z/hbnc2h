@@ -6,8 +6,37 @@ run_tiniba.sh -r run -k 452 -N 0 -x 2 -C 6 -P  -w -e -p -s
 
 run_tiniba.sh -r erase; all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 1 -t "xx yy zz"; all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 3 -t "xxy yxy zxy"; all_responses.sh -w total -m 452_5-spin -s 0 -o 1 -v 18 -c 22 -r 41 -t "xxy yxy zxy"
 
+addext 
 
-p "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-10z" u 1:2 w l
+scp medusa:/homee/reinaldo/hbnc2h/cart/1-vacuum_convergence/hbnc2h-50z/res/chi1* chi-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/1-vacuum_convergence/hbnc2h-50z/res/eta2* eta-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/1-vacuum_convergence/hbnc2h-50z/res/zeta* zeta-res/
+
+p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-10z" u 1:2 w l
 rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-15z" u 1:2 w l
 rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-20z" u 1:2 w l
+p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-25z" u 1:($2*25) w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-30z" u 1:($2*30) w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-35z" u 1:($2*35) w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-40z" u 1:($2*40) w l
+
+p   "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-25z" u 1:($4*25) w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-30z" u 1:($4*30) w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-35z" u 1:($4*35) w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-40z" u 1:($4*40) w l
+
+p   "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-25z" u 1:($5*25) w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-30z" u 1:($5*30) w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-35z" u 1:($5*35) w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-40z" u 1:($5*40) w l
+
+           %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+           Vacuum convergence reached for z=35 Bohr.
+           %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+Comparison of xx and yy components:
+p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-35z" u 1:2 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-35z" u 1:4 w l
+
+################################################################################
 
