@@ -30,9 +30,13 @@ rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-30z" u 1:($5*3
 rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-35z" u 1:($5*35) w l
 rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22-40z" u 1:($5*40) w l
 
-           %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
-           Vacuum convergence reached for z=35 Bohr.
-           %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+
+            %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+            Vacuum convergence reached for z=35 Bohr.
+            %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+
 
 Comparison of xx and yy components:
 p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22-35z" u 1:2 w l
@@ -48,42 +52,100 @@ run_tiniba.sh -r run -k 452 -N 0 -x 2 -C 6 -P  -w -e -p -s
 
 run_tiniba.sh -r erase
 
-all_responses.sh -w total -m 452_15-spin -s 0 -o 1 -v 18 -c 22 -r 1 -t "xx yy zz"
-all_responses.sh -w total -m 452_15-spin -s 0 -o 1 -v 18 -c 22 -r 3 -t "xxy yxy zxy"
-all_responses.sh -w total -m 452_15-spin -s 0 -o 1 -v 18 -c 22 -r 41 -t "xxy yxy zxy"
+all_responses.sh -w total -m 452_55-spin -s 0 -o 1 -v 18 -c 22 -r 1 -t "xx yy zz"
+all_responses.sh -w total -m 452_55-spin -s 0 -o 1 -v 18 -c 22 -r 3 -t "xxy yxy zxy"
+all_responses.sh -w total -m 452_55-spin -s 0 -o 1 -v 18 -c 22 -r 41 -t "xxy yxy zxy"
 
-dsp-new.sh chi1.kk_xx_yy_zz_452_15-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_15-spin_scissor_0_Nc_22 2
-mv dsp.kk-scissor_0_Nc_22 dsp.kk_x_452_15-scissor_0_Nc_22
-dsp-new.sh chi1.kk_xx_yy_zz_452_15-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_15-spin_scissor_0_Nc_22 3
-mv dsp.kk-scissor_0_Nc_22 dsp.kk_y_452_15-scissor_0_Nc_22
-dsp-new.sh chi1.kk_xx_yy_zz_452_15-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_15-spin_scissor_0_Nc_22 4
-mv dsp.kk-scissor_0_Nc_22 dsp.kk_z_452_15-scissor_0_Nc_22
+dsp-new.sh chi1.kk_xx_yy_zz_452_55-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_55-spin_scissor_0_Nc_22 2
+mv dsp.kk-scissor_0_Nc_22 dsp.kk_x_452_55-scissor_0_Nc_22
+dsp-new.sh chi1.kk_xx_yy_zz_452_55-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_55-spin_scissor_0_Nc_22 3
+mv dsp.kk-scissor_0_Nc_22 dsp.kk_y_452_55-scissor_0_Nc_22
+dsp-new.sh chi1.kk_xx_yy_zz_452_55-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_55-spin_scissor_0_Nc_22 4
+mv dsp.kk-scissor_0_Nc_22 dsp.kk_z_452_55-scissor_0_Nc_22
 
-scp medusa:/homee/reinaldo/hbnc2h/cart/2-ecut_convergence/hbnc2h-15ha/res/chi1* chi-res/
-scp medusa:/homee/reinaldo/hbnc2h/cart/2-ecut_convergence/hbnc2h-15ha/res/eta2* eta-res/
-scp medusa:/homee/reinaldo/hbnc2h/cart/2-ecut_convergence/hbnc2h-15ha/res/zeta* zeta-res/
-scp medusa:/homee/reinaldo/hbnc2h/cart/2-ecut_convergence/hbnc2h-15ha/res/dsp*  dsp-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/2-ecut_convergence/hbnc2h-55ha/res/chi1* chi-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/2-ecut_convergence/hbnc2h-55ha/res/eta2* eta-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/2-ecut_convergence/hbnc2h-55ha/res/zeta* zeta-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/2-ecut_convergence/hbnc2h-55ha/res/dsp*  dsp-res/
 
 p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_5-spin_scissor_0_Nc_22"  u 1:2 w l
 rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_10-spin_scissor_0_Nc_22" u 1:2 w l
-rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_15-spin_scissor_0_Nc_22" u 1:2 w l
+p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_15-spin_scissor_0_Nc_22" u 1:7 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_20-spin_scissor_0_Nc_22" u 1:7 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_25-spin_scissor_0_Nc_22" u 1:7 w l
+p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_30-spin_scissor_0_Nc_22" u 1:7 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_35-spin_scissor_0_Nc_22" u 1:7 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_40-spin_scissor_0_Nc_22" u 1:7 w l
+p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_45-spin_scissor_0_Nc_22" u 1:2 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_50-spin_scissor_0_Nc_22" u 1:2 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_55-spin_scissor_0_Nc_22" u 1:2 w l
 
-p   "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22"  u 1:($4*25) w l
-rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_10-spin_scissor_0_Nc_22" u 1:($4*30) w l
-rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_15-spin_scissor_0_Nc_22" u 1:($4*35) w l
+p   "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_5-spin_scissor_0_Nc_22"  u 1:2 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_10-spin_scissor_0_Nc_22" u 1:2 w l
+p   "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_15-spin_scissor_0_Nc_22" u 1:3 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_20-spin_scissor_0_Nc_22" u 1:3 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_25-spin_scissor_0_Nc_22" u 1:3 w l
+p   "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_30-spin_scissor_0_Nc_22" u 1:3 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_35-spin_scissor_0_Nc_22" u 1:3 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_40-spin_scissor_0_Nc_22" u 1:3 w l
+p   "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_45-spin_scissor_0_Nc_22" u 1:4 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_22" u 1:4 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_55-spin_scissor_0_Nc_22" u 1:4 w l
 
+p   "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_30-spin_scissor_0_Nc_22" u 1:4 w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_35-spin_scissor_0_Nc_22" u 1:4 w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_40-spin_scissor_0_Nc_22" u 1:4 w l
+p   "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_45-spin_scissor_0_Nc_22" u 1:4 w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_22" u 1:4 w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_55-spin_scissor_0_Nc_22" u 1:4 w l
 
 
 p   "dsp-res/dsp.kk_x_452_5-scissor_0_Nc_22"  u 1:(2*$4/($2+$3+1.e-10)) w l
-rep "dsp-res/dsp.kk_x_452_15-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
 rep "dsp-res/dsp.kk_x_452_10-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_x_452_15-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_x_452_20-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_x_452_25-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_x_452_30-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_x_452_35-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_x_452_40-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_x_452_45-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_x_452_50-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_x_452_55-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
 
 p   "dsp-res/dsp.kk_y_452_5-scissor_0_Nc_22"  u 1:(2*$4/($2+$3+1.e-10)) w l
-rep "dsp-res/dsp.kk_y_452_15-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
 rep "dsp-res/dsp.kk_y_452_10-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_y_452_15-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_y_452_20-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_y_452_25-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_y_452_30-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_y_452_35-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_y_452_40-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_y_452_45-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_y_452_50-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_y_452_55-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
 
 p   "dsp-res/dsp.kk_z_452_5-scissor_0_Nc_22"  u 1:(2*$4/($2+$3+1.e-10)) w l
-rep "dsp-res/dsp.kk_z_452_15-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
 rep "dsp-res/dsp.kk_z_452_10-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_z_452_15-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_z_452_20-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_z_452_25-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_z_452_30-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_z_452_35-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_z_452_40-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+p   "dsp-res/dsp.kk_z_452_45-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_z_452_50-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+rep "dsp-res/dsp.kk_z_452_55-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
+
+
+                %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+                  Ecut convergence reached for 50Ha.
+                %~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%~%
+
+
+
+################################################################################
+
+
+
 
 
