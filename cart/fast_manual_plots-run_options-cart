@@ -146,6 +146,40 @@ rep "dsp-res/dsp.kk_z_452_55-scissor_0_Nc_22" u 1:(2*$4/($2+$3+1.e-10)) w l
 ################################################################################
 
 
+            BAND CONVERGENCE
+
+abinit_check.sh 1; abinit_check.sh  2; echo 1 | rklist.sh 31 31 2 abinit; run_tiniba.sh; run_tiniba.sh -r run -k 452 -N 0 -x 2 -C 6 -P 2228 -w -e -p -s; run_tiniba.sh -r erase
+
+all_responses.sh
+
+all_responses.sh -w total -m 452_50-spin -s 0 -o 1 -v 22 -c 2 -r 1 -t "xx yy zz"
+all_responses.sh -w total -m 452_50-spin -s 0 -o 1 -v 22 -c 2 -r 3 -t "xxy yxy zxy"
+all_responses.sh -w total -m 452_50-spin -s 0 -o 1 -v 22 -c 2 -r 41 -t "xxy yxy zxy"
+
+dsp-new.sh chi1.kk_xx_yy_zz_452_50-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_22 2
+mv dsp.kk-scissor_0_Nc_22 dsp.kk_x_452_50-scissor_0_Nc_22
+dsp-new.sh chi1.kk_xx_yy_zz_452_50-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_22 3
+mv dsp.kk-scissor_0_Nc_22 dsp.kk_y_452_50-scissor_0_Nc_22
+dsp-new.sh chi1.kk_xx_yy_zz_452_50-spin_scissor_0_Nc_22 zeta.kk_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_22 4
+mv dsp.kk-scissor_0_Nc_22 dsp.kk_z_452_50-scissor_0_Nc_22
+
+scp medusa:/homee/reinaldo/hbnc2h/cart/3-band_convergence/hbnc2h-40nb/res/chi1* chi-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/3-band_convergence/hbnc2h-40nb/res/eta2* eta-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/3-band_convergence/hbnc2h-40nb/res/zeta* zeta-res/
+scp medusa:/homee/reinaldo/hbnc2h/cart/3-band_convergence/hbnc2h-40nb/res/dsp*  dsp-res/
 
 
+p   "chi-res/chi1.sm_0.15_xx_yy_zz_452_50-spin_scissor_0_Nc_2"  u 1:7 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_50-spin_scissor_0_Nc_6"  u 1:7 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_50-spin_scissor_0_Nc_10" u 1:7 w l
+rep "chi-res/chi1.sm_0.15_xx_yy_zz_452_50-spin_scissor_0_Nc_18" u 1:7 w l
 
+p   "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_2"  u 1:4 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_6"  u 1:4 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_10" u 1:4 w l
+rep "eta-res/eta2.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_18" u 1:4 w l
+
+p   "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_2"  u 1:4 w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_6"  u 1:4 w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_10" u 1:4 w l
+rep "zeta-res/zeta.sm_0.15_xxy_yxy_zxy_452_50-spin_scissor_0_Nc_18" u 1:4 w l
