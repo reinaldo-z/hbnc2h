@@ -222,11 +222,15 @@ echo 1 | rklist.sh 101 101 2 abinit   # 5002 kpts
 echo 1 | rklist.sh 111 111 2 abinit   # 6052 kpts
 
 
-############ kptsConv.sh
+############ kptsConv.sh (start)
 #!/bin/bash
 kpts=( 802 1252 1802 2452 3202 5002 6052 7202 )
 for i in ${kpts[@]}; do
     START=$(date)
+    echo ""
+    echo ""
+    echo ""
+    echo "run_tiniba.sh -r run -k $i -N 0 -x 2 -C 6 -P 2228 -w -e -p -s"
     run_tiniba.sh -r run -k "$i" -N 0 -x 2 -C 6 -P 2228 -w -e -p -s
     run_tiniba.sh -r erase
     all_responses.sh -w total -m "$i"_50-spin -s 0 -o 1 -v 18 -c 32 -r 1 -t "xx yy zz"
@@ -235,15 +239,15 @@ for i in ${kpts[@]}; do
     END=$(date)
     ssh cassandra "echo -e 'Calculations completed for $i kpts\nStarted at $START \nFinished at $END \n\nArray of ktps: \n${kpts[@]} ' | mail -s '$i kpts' reychino@gmail.com"
 done
-############ kptsConv.sh (ended)
+############ kptsConv.sh (end)
 
 
-dsp-new.sh chi1.kk_xx_yy_zz_802_50-spin_scissor_0_Nc_42 zeta.kk_xxy_yxy_zxy_802_50-spin_scissor_0_Nc_42 2
-mv dsp.kk-scissor_0_Nc_42 dsp.kk_x_802_50-scissor_0_Nc_42
-dsp-new.sh chi1.kk_xx_yy_zz_802_50-spin_scissor_0_Nc_42 zeta.kk_xxy_yxy_zxy_802_50-spin_scissor_0_Nc_42 3
-mv dsp.kk-scissor_0_Nc_42 dsp.kk_y_802_50-scissor_0_Nc_42
-dsp-new.sh chi1.kk_xx_yy_zz_802_50-spin_scissor_0_Nc_42 zeta.kk_xxy_yxy_zxy_802_50-spin_scissor_0_Nc_42 4
-mv dsp.kk-scissor_0_Nc_42 dsp.kk_z_802_50-scissor_0_Nc_42
+dsp-new.sh chi1.kk_xx_yy_zz_802_50-spin_scissor_0_Nc_32 zeta.kk_xxy_yxy_zxy_802_50-spin_scissor_0_Nc_32 2
+mv dsp.kk-scissor_0_Nc_32 dsp.kk_x_802_50-scissor_0_Nc_32
+dsp-new.sh chi1.kk_xx_yy_zz_802_50-spin_scissor_0_Nc_32 zeta.kk_xxy_yxy_zxy_802_50-spin_scissor_0_Nc_32 3
+mv dsp.kk-scissor_0_Nc_32 dsp.kk_y_802_50-scissor_0_Nc_32
+dsp-new.sh chi1.kk_xx_yy_zz_802_50-spin_scissor_0_Nc_32 zeta.kk_xxy_yxy_zxy_802_50-spin_scissor_0_Nc_32 4
+mv dsp.kk-scissor_0_Nc_32 dsp.kk_z_802_50-scissor_0_Nc_32
 
 scp medusa:/homee/reinaldo/hbnc2h/cart/4-kpts_convergence/hbnc2h/res/chi1* chi-res/
 scp medusa:/homee/reinaldo/hbnc2h/cart/4-kpts_convergence/hbnc2h/res/eta2* eta-res/
