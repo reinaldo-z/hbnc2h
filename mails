@@ -28,6 +28,7 @@ Thank you, Reinaldo, again for your calculations. Good news that the deadline ha
 Now I have a question. Looking at your linear response, you see that xx and yy  components of chi are different. To me they should be the same, since the system has hexagonal symmetry (is this correct?).  I am attaching as an example the calculation of the linear response for graphane that has been carried out in CIO six years ago, with the xx and yy components, which are practically identical.
  
 I’d suggest to check whether everything is OK, you can repeat the same calculations for simple system, e.g., BN monolayer, I put coordinates of BN monolayer, graphene monolayer and the system that you calculated in one *.xyz file.
+
 ################################################################################
 
 Hi Anatoli. 
@@ -53,3 +54,18 @@ hexagonal.
 
 Finally, just help me to double ckeck if the coordinates that I'm using are
 right (attached *.xyz).
+
+################################################################################
+
+Hi Anatoli. 
+
+I made again the convergence process but now using the Cartesian coordinates and
+I have the final graphs. Again the symmetry of the system that ABINIT reports is
+primitive triclinic instead hexagonal.
+
+Also I want to know if you made a review of the structure coordinates and  if
+they are right. Please let me know if you are going to include the results that
+I have. Just let me know and I will send them to you immediately.
+
+Thanks.
+
